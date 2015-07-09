@@ -1,0 +1,13 @@
+
+{% extends "::layoutBase.html.twig" %}
+
+
+{% block content %}
+    <section id="enConstruct">
+        <p> Cette partie du site est encore en construction</p>
+        
+        <a href="{{ path('dahouet_retour')}}"><input name="valider" value="Retournez à l'accueil" type="submit"></a>
+        <img class="displayed" src="../../../web/bundles/images/travaux.png"/>
+    </section>
+    
+{% endblock %}

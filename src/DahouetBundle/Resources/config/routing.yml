@@ -1,0 +1,31 @@
+dahouet_homepage:
+    path:     index/
+    defaults: { _controller: DahouetBundle:Default:index }
+    
+dahouet_inscription:
+    path:    register/
+    defaults: { _controller: DahouetBundle:Inscription:regate }
+ 
+dahouet_logout:
+    path:    logout/
+    defaults: { _controller: DahouetBundle:Log:logout }
+
+dahouet_noinscription:
+    path:    noinscription/
+    defaults: { _controller: DahouetBundle:Default:noinscription }
+    
+dahouet_retour:
+    path:   retour/
+    defaults: { _controller: DahouetBundle:Default:retour }
+    
+#dahouet_valider:
+#    path:    valider/
+#    defaults: { _controller: DahouetBundle:Inscription:valider }
+    
+dahouet_enConstruction:
+    path:    enConstruction/
+    defaults: { _controller: DahouetBundle:NoConstruct:enConstruction }
+    
+dahouet_voilier:
+    path:    voilier/
+    defaults: { _controller: DahouetBundle:Inscription:voilier }

@@ -1,0 +1,27 @@
+{% extends "DahouetBundle::index.html.twig" %}
+{% block aside %}
+<div id="reseaux">
+    <p>Suivez-nous sur les réseaux sociaux</p>
+    <a href="https://fr-fr.facebook.com/ycvalandre"><img src="../../../web/bundles/images/FB.png"/></a>
+    <a href="https://twitter.com/ycvalandre"><img src="../../../web/bundles/images/Tw.png"/></a>
+</div>
+<div id="connection">
+    <div id="bandeauInt">Vous êtes maintenant connectés</div>
+    <p id="deconnect">Bonjour {{ app.session.get('user') }}</br><a href="{{ path ('dahouet_logout') }}"><input type="submit" value="se deconnecter" ></a></p>
+    
+    
+</div>
+<div id="infChall">
+    <div id="bandeauInt">Challenge</div>
+    
+</div>
+<div id="recherche">
+    <div id="bandeauInt">Recherche</div>
+    <div id="champ">
+        <input type="text" name="recherche" id="cherche" placeholder="recherche">
+        <div id="rech"><a id="lien" href="#">Rechercher !</a></div>
+    </div>
+</div>
+
+
+{% endblock %}

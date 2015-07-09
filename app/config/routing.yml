@@ -1,0 +1,7 @@
+
+
+dahouet:
+    resource: "@DahouetBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

@@ -1,0 +1,22 @@
+{% extends "::layoutBase.html.twig" %}
+{% block content %}
+    <div id="center">
+        <section>
+            <article id="contenu">
+                {% block article %}
+                    {% include 'DahouetBundle::contenuArticle.html.twig' %}
+                {% endblock %}
+                     
+            </article>
+            <aside id="side">
+                {% block aside %}
+                    {% include 'DahouetBundle::aside.html.twig' %}
+                {% endblock %}
+            </aside>
+            
+               
+        </section>
+    </div>
+                 
+{% endblock %}
+    
